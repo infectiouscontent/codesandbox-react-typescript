@@ -64,7 +64,7 @@ const LandingPage: React.FC = () => {
     <>
       {/* Helmet for SEO and metadata */}
       <Helmet>
-        <title>Infectious Content LLC - Crafting Contagions</title>
+        <title>Infectious Content LLC - Crafting Contagious Content</title>
         <meta
           name="description"
           content="Infectious Content LLC crafts contagious marketing messages based on exhaustive market research and business strategy."
@@ -78,7 +78,7 @@ const LandingPage: React.FC = () => {
         <meta property="og:url" content="https://www.infectiouscontent.com" />
         <meta
           property="og:title"
-          content="Infectious Content LLC - Crafting Contagions"
+          content="Infectious Content LLC - Crafting Contagious Content"
         />
         <meta
           property="og:description"
@@ -94,7 +94,7 @@ const LandingPage: React.FC = () => {
         <meta name="twitter:url" content="https://www.infectiouscontent.com" />
         <meta
           name="twitter:title"
-          content="Infectious Content LLC - Crafting Contagions"
+          content="Infectious Content LLC - Crafting Contagious Content"
         />
         <meta
           name="twitter:description"
