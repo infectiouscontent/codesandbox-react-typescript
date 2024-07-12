@@ -25,10 +25,10 @@ const PrivacyPolicy: React.FC = () => {
         <title>Privacy Policy - Infectious Content LLC</title>
         <meta
           name="description"
-          content="Privacy Policy for Infectious Content LLC - Learn how we protect your data and respect your privacy."
+          content="Privacy Policy for Infectious Content LLC - Learn how user data is protected and privacy is respected."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="robots" content="noindex, nofollow" />  {/* Changed to prevent indexing of incomplete policy */}
+        <meta name="robots" content="noindex, nofollow" />
       </Helmet>
       <div className="wrapper">
         <motion.div
@@ -42,37 +42,36 @@ const PrivacyPolicy: React.FC = () => {
           </div>
           <h1>Privacy Policy</h1>
           <p>
-            Our Privacy Policy is currently being updated to ensure compliance
-            with the latest data protection regulations. We are committed to
-            protecting your privacy and handling your data with transparency and
+            The Privacy Policy of Infectious Content LLC is currently being updated to ensure compliance
+            with the latest data protection regulations. The company is committed to
+            protecting user privacy and handling data with transparency and
             care.
           </p>
-          <p>Key points of our privacy practices include:</p>
+          <p>Key points of the privacy practices include:</p>
           <ul>
             <li>
-              We only collect information that is necessary for providing our
+              Collection of information is limited to what is necessary for providing
               services
             </li>
-            <li>Your data is never sold to third parties</li>
+            <li>User data is not sold to third parties</li>
             <li>
-              We use industry-standard security measures to protect your
+              Industry-standard security measures are employed to protect user
               information
             </li>
             <li>
-              You have the right to access, modify, or delete your personal data
+              Users have the right to access, modify, or delete their personal data
             </li>
           </ul>
           <p>
-            If you have any immediate questions or concerns about our privacy
-            practices, please contact us at{" "}
+            For immediate questions or concerns about privacy practices, please contact:
+            {" "}
             <a href="mailto:privacy@infectiouscontent.com">
               privacy@infectiouscontent.com
             </a>
-            .
           </p>
           <p>
-            We appreciate your patience as we finalize our comprehensive privacy
-            policy. Check back soon for the full version.
+            Infectious Content LLC appreciates user patience as the comprehensive privacy
+            policy is being finalized. Please check back soon for the full version.
           </p>
           <Link to="/" className="btn">
             Back to Home
