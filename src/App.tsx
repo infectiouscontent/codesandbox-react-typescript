@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import LandingPage from "./components/LandingPage";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import TermsOfService from "./components/TermsOfService";
+import NotFound from './components/NotFound';
 import "./styles/index.css";
 
 /**
@@ -54,6 +55,7 @@ const App: React.FC = () => {
           Note: If you want to add a 404 Not Found page, you can add it here like this:
           <Route path="*" element={<NotFound />} />
         */}
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
   );
