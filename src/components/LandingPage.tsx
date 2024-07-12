@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
 import backgroundImage from "../images/sukant-sharma-b6rs6V_9lH4-unsplash.jpg";
 import logo from "../images/infectiouscontent-icon-1080x1080px.png";
 import "../styles/index.css";
@@ -9,7 +10,7 @@ import "../styles/index.css";
  * LandingPage Component
  *
  * This component renders the main landing page for Infectious Content LLC.
- * It includes a contact form, social media links, and SEO metadata.
+ * It includes a contact form, social media links, SEO metadata, and a footer with legal links.
  */
 const LandingPage: React.FC = () => {
   // State for form inputs and submission status
@@ -221,6 +222,17 @@ const LandingPage: React.FC = () => {
             </a>
           </div>
         </motion.div>
+
+        {/* Footer with Legal Links */}
+        <footer className="footer">
+          <div className="footer-content">
+            <p>&copy; 2024 Infectious Content LLC. All rights reserved.</p>
+            <nav className="footer-nav">
+              <Link to="/privacy-policy" className="footer-link">Privacy Policy</Link>
+              <Link to="/terms-of-service" className="footer-link">Terms of Service</Link>
+            </nav>
+          </div>
+        </footer>
       </div>
     </>
   );
