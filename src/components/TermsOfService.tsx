@@ -2,6 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import backgroundImage from "../images/sukant-sharma-b6rs6V_9lH4-unsplash.jpg";
 import logo from "../images/infectiouscontent-icon-1080x1080px.png";
 
 /**
@@ -9,12 +10,6 @@ import logo from "../images/infectiouscontent-icon-1080x1080px.png";
  *
  * This component renders the Terms of Service page for Infectious Content LLC.
  * It maintains a consistent style with the main LandingPage and PrivacyPolicy components.
- *
- * Features:
- * - SEO optimization using React Helmet
- * - Animated content using Framer Motion
- * - Consistent styling with the main landing page
- * - Navigation back to the home page
  *
  * @returns {JSX.Element} The rendered TermsOfService component
  */
@@ -30,7 +25,10 @@ const TermsOfService: React.FC = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="noindex, nofollow" />
       </Helmet>
-      <div className="wrapper">
+      <div 
+        className="wrapper"
+        style={{ backgroundImage: `url(${backgroundImage})` }}
+      >
         <motion.div
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
