@@ -1,11 +1,11 @@
 {
-  "name": "react-typescript",
+  "name": "infectious-content-llc",
   "version": "1.0.0",
-  "description": "React and TypeScript example starter project",
+  "description": "Landing page for Infectious Content LLC",
   "keywords": [
     "typescript",
     "react",
-    "starter"
+    "landing-page"
   ],
   "main": "src/index.tsx",
   "dependencies": {
