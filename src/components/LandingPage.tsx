@@ -8,10 +8,10 @@ import "../styles/index.css";
 
 /**
  * LandingPage Component
- *
+ * 
  * This component renders the main landing page for Infectious Content LLC.
  * It includes a contact form, social media links, SEO metadata, and a footer with legal links.
- *
+ * 
  * @returns {JSX.Element} The rendered LandingPage component
  */
 const LandingPage: React.FC = () => {
@@ -210,6 +210,7 @@ const LandingPage: React.FC = () => {
               href="https://www.youtube.com/@infectiouscontent"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="YouTube"
             >
               <i className="fab fa-youtube"></i>
             </a>
@@ -217,6 +218,7 @@ const LandingPage: React.FC = () => {
               href="https://www.instagram.com/infectiouscontent/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Instagram"
             >
               <i className="fab fa-instagram"></i>
             </a>
@@ -224,6 +226,7 @@ const LandingPage: React.FC = () => {
               href="https://www.threads.net/@infectiouscontent"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Threads"
             >
               <i className="fab fa-threads"></i>
             </a>
@@ -231,6 +234,7 @@ const LandingPage: React.FC = () => {
               href="https://infectiouscontent.substack.com/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Substack"
             >
               <i className="fas fa-newspaper"></i>
             </a>
