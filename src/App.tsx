@@ -9,11 +9,11 @@ import "./styles/index.css";
  * App Component
  *
  * This is the root component of the application. It sets up the routing
- * structure for the entire app using React Router 6.
+ * structure for the entire app using React Router.
  *
  * The component uses:
  * - BrowserRouter: For handling routing in the app
- * - Routes: To define the routing structure (replaces Switch in v6)
+ * - Routes: To define the routing structure
  * - Route: To define individual routes
  *
  * Routes:
@@ -29,12 +29,20 @@ const App: React.FC = () => {
       <Routes>
         {/* 
          Main Landing Page Route
-         The 'index' prop replaces 'exact' in v6 for the root route
+         This route renders the LandingPage component when the path is exactly "/"
         */}
         <Route path="/" element={<LandingPage />} />
-        {/* Privacy Policy Page Route */}
+
+        {/* 
+         Privacy Policy Page Route
+         This route renders the PrivacyPolicy component when the path is "/privacy-policy"
+        */}
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-        {/* Terms of Service Page Route */}
+
+        {/* 
+         Terms of Service Page Route
+         This route renders the TermsOfService component when the path is "/terms-of-service"
+        */}
         <Route path="/terms-of-service" element={<TermsOfService />} />
       </Routes>
     </Router>

@@ -11,16 +11,22 @@ import "../styles/index.css";
  *
  * This component renders the main landing page for Infectious Content LLC.
  * It includes a contact form, social media links, SEO metadata, and a footer with legal links.
+ *
+ * @returns {JSX.Element} The rendered LandingPage component
  */
 const LandingPage: React.FC = () => {
   // State for form inputs and submission status
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-  const [status, setStatus] = useState("");
+  const [name, setName] = useState<string>("");
+  const [email, setEmail] = useState<string>("");
+  const [message, setMessage] = useState<string>("");
+  const [status, setStatus] = useState<string>("");
 
   /**
    * Handle form submission
+   * 
+   * This function prevents the default form submission, sends the form data
+   * to a Formspree endpoint, and updates the status based on the response.
+   *
    * @param {React.FormEvent<HTMLFormElement>} event - The form submission event
    */
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
@@ -56,6 +62,7 @@ const LandingPage: React.FC = () => {
 
   return (
     <>
+      {/* Helmet for SEO and metadata */}
       <Helmet>
         <title>Infectious Content LLC - Crafting Contagions</title>
         <meta
@@ -128,19 +135,24 @@ const LandingPage: React.FC = () => {
         </script>
       </Helmet>
 
+      {/* Main content wrapper */}
       <div
         className="wrapper"
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
+        {/* Animated content container */}
         <motion.div
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           className="container"
         >
+          {/* Logo */}
           <div className="logo-container">
             <img src={logo} alt="Infectious Content LLC" className="logo" />
           </div>
+
+          {/* Main content */}
           <p>
             Ready to exponentially raise awareness for your brand? Ignite
             customer engagement and watch your business explode with viral
@@ -152,6 +164,8 @@ const LandingPage: React.FC = () => {
             content, watch it spread organically, and drive your commercial
             success.
           </p>
+
+          {/* Contact form */}
           <form onSubmit={handleSubmit}>
             <motion.input
               whileFocus={{ scale: 1.05 }}
@@ -226,7 +240,7 @@ const LandingPage: React.FC = () => {
         {/* Footer with Legal Links */}
         <footer className="footer">
           <div className="footer-content">
-            <p>&copy; 2024 Infectious Content LLC. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Infectious Content LLC. All rights reserved.</p>
             <nav className="footer-nav">
               <Link to="/privacy-policy" className="footer-link">Privacy Policy</Link>
               <Link to="/terms-of-service" className="footer-link">Terms of Service</Link>
