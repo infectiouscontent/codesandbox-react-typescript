@@ -27,8 +27,9 @@ const PrivacyPolicy: React.FC = () => {
           name="description"
           content="Privacy Policy for Infectious Content LLC - Learn how we protect your data and respect your privacy."
         />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="robots" content="noindex, nofollow" />  {/* Changed to prevent indexing of incomplete policy */}
       </Helmet>
-
       <div className="wrapper">
         <motion.div
           initial={{ opacity: 0, y: -50 }}
@@ -39,18 +40,14 @@ const PrivacyPolicy: React.FC = () => {
           <div className="logo-container">
             <img src={logo} alt="Infectious Content LLC" className="logo" />
           </div>
-
           <h1>Privacy Policy</h1>
-
           <p>
             Our Privacy Policy is currently being updated to ensure compliance
             with the latest data protection regulations. We are committed to
             protecting your privacy and handling your data with transparency and
             care.
           </p>
-
           <p>Key points of our privacy practices include:</p>
-
           <ul>
             <li>
               We only collect information that is necessary for providing our
@@ -65,7 +62,6 @@ const PrivacyPolicy: React.FC = () => {
               You have the right to access, modify, or delete your personal data
             </li>
           </ul>
-
           <p>
             If you have any immediate questions or concerns about our privacy
             practices, please contact us at{" "}
@@ -74,12 +70,10 @@ const PrivacyPolicy: React.FC = () => {
             </a>
             .
           </p>
-
           <p>
             We appreciate your patience as we finalize our comprehensive privacy
             policy. Check back soon for the full version.
           </p>
-
           <Link to="/" className="btn">
             Back to Home
           </Link>
