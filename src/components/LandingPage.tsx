@@ -11,7 +11,7 @@ import "../styles/index.css";
  * This component renders the main landing page for Infectious Content LLC.
  * It includes a contact form, social media links, and SEO metadata.
  */
-function LandingPage() {
+const LandingPage: React.FC = () => {
   // State for form inputs and submission status
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -224,6 +224,6 @@ function LandingPage() {
       </div>
     </>
   );
-}
+};
 
 export default LandingPage;
