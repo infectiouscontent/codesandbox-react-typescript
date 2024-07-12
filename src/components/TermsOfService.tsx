@@ -25,10 +25,10 @@ const TermsOfService: React.FC = () => {
         <title>Terms of Service - Infectious Content LLC</title>
         <meta
           name="description"
-          content="Terms of Service for Infectious Content LLC - Understand our service agreement and user responsibilities."
+          content="Terms of Service for Infectious Content LLC - Understand the service agreement and user responsibilities."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="robots" content="noindex, nofollow" />  {/* Prevent indexing of incomplete terms */}
+        <meta name="robots" content="noindex, nofollow" />
       </Helmet>
       <div className="wrapper">
         <motion.div
@@ -42,25 +42,25 @@ const TermsOfService: React.FC = () => {
           </div>
           <h1>Terms of Service</h1>
           <p>
-            Our Terms of Service are currently being updated to ensure clarity and fairness in our service agreement. We are committed to providing transparent and equitable terms for all our users.
+            The Terms of Service for Infectious Content LLC are currently under review to ensure clarity and fairness in the service agreement. The company is committed to providing transparent and equitable terms for all users.
           </p>
-          <p>Key points of our terms of service include:</p>
+          <p>Key points of the terms of service include:</p>
           <ul>
             <li>Description of services provided by Infectious Content LLC</li>
-            <li>User responsibilities and acceptable use of our services</li>
+            <li>User responsibilities and acceptable use of services</li>
             <li>Intellectual property rights and content ownership</li>
             <li>Limitation of liability and disclaimer of warranties</li>
             <li>Procedures for account termination and cancellation</li>
           </ul>
           <p>
-            If you have any immediate questions or concerns about our terms of service, please contact us at{" "}
+            For immediate questions or concerns about the terms of service, please contact:
+            {" "}
             <a href="mailto:legal@infectiouscontent.com">
               legal@infectiouscontent.com
             </a>
-            .
           </p>
           <p>
-            We appreciate your patience as we finalize our comprehensive terms of service. Check back soon for the full version.
+            Infectious Content LLC appreciates user patience as the comprehensive terms of service are being finalized. Please check back soon for the full version.
           </p>
           <Link to="/" className="btn">
             Back to Home
