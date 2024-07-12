@@ -8,7 +8,7 @@ import logo from "../images/infectiouscontent-icon-1080x1080px.png";
  * TermsOfService Component
  *
  * This component renders the Terms of Service page for Infectious Content LLC.
- * It maintains a consistent style with the main LandingPage component.
+ * It maintains a consistent style with the main LandingPage and PrivacyPolicy components.
  *
  * Features:
  * - SEO optimization using React Helmet
@@ -25,10 +25,11 @@ const TermsOfService: React.FC = () => {
         <title>Terms of Service - Infectious Content LLC</title>
         <meta
           name="description"
-          content="Terms of Service for Infectious Content LLC - Understand the terms governing the use of our services."
+          content="Terms of Service for Infectious Content LLC - Understand our service agreement and user responsibilities."
         />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="robots" content="noindex, nofollow" />  {/* Prevent indexing of incomplete terms */}
       </Helmet>
-
       <div className="wrapper">
         <motion.div
           initial={{ opacity: 0, y: -50 }}
@@ -39,40 +40,28 @@ const TermsOfService: React.FC = () => {
           <div className="logo-container">
             <img src={logo} alt="Infectious Content LLC" className="logo" />
           </div>
-
           <h1>Terms of Service</h1>
-
           <p>
-            Our Terms of Service are currently being refined to provide you with
-            the clearest understanding of the agreement between Infectious
-            Content LLC and our clients.
+            Our Terms of Service are currently being updated to ensure clarity and fairness in our service agreement. We are committed to providing transparent and equitable terms for all our users.
           </p>
-
-          <p>Key aspects of our terms include:</p>
-
+          <p>Key points of our terms of service include:</p>
           <ul>
             <li>Description of services provided by Infectious Content LLC</li>
-            <li>Client responsibilities and expectations</li>
-            <li>Intellectual property rights</li>
-            <li>Payment terms and conditions</li>
-            <li>Limitation of liability</li>
-            <li>Termination clauses</li>
+            <li>User responsibilities and acceptable use of our services</li>
+            <li>Intellectual property rights and content ownership</li>
+            <li>Limitation of liability and disclaimer of warranties</li>
+            <li>Procedures for account termination and cancellation</li>
           </ul>
-
           <p>
-            If you have any immediate questions about our services or the terms
-            under which we operate, please reach out to us at{" "}
+            If you have any immediate questions or concerns about our terms of service, please contact us at{" "}
             <a href="mailto:legal@infectiouscontent.com">
               legal@infectiouscontent.com
             </a>
             .
           </p>
-
           <p>
-            We appreciate your understanding as we finalize our comprehensive
-            Terms of Service. Please check back soon for the complete document.
+            We appreciate your patience as we finalize our comprehensive terms of service. Check back soon for the full version.
           </p>
-
           <Link to="/" className="btn">
             Back to Home
           </Link>
