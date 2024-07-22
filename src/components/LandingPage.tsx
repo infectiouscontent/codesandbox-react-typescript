@@ -240,18 +240,18 @@ const LandingPage: React.FC = () => {
             </a>
           </div>
         </motion.div>
-      </div>
 
-      {/* Footer with Legal Links */}
-      <footer className="footer">
-        <div className="footer-content">
-          <p>&copy; {new Date().getFullYear()} Infectious Content LLC. All rights reserved.</p>
-          <nav className="footer-nav">
-            <Link to="/privacy-policy" className="footer-link">Privacy Policy</Link>
-            <Link to="/terms-of-service" className="footer-link">Terms of Service</Link>
-          </nav>
-        </div>
-      </footer>
+        {/* Footer with Legal Links */}
+        <footer className="footer">
+          <div className="footer-content">
+            <p>&copy; {new Date().getFullYear()} Infectious Content LLC. All rights reserved.</p>
+            <nav className="footer-nav">
+              <Link to="/privacy-policy" className="footer-link">Privacy Policy</Link>
+              <Link to="/terms-of-service" className="footer-link">Terms of Service</Link>
+            </nav>
+          </div>
+        </footer>
+      </div>
     </>
   );
 };
